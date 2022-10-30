@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro html</title>
+</head>
+<body>
+    <hr/>
+    <h1 id="inicio"><font face="Verdana, Geneva, sans-serif">HTML básico - códigos HTML</font></h1>
+    <hr/>
+    <br/>
+    <h2><font face="Verdana, Geneva, sans-serif">Indice</font></h2>
+    <ul>
+        <li><a href="#estBasica">Estrutura básica de uma página HTML</a></li>
+        <li><a href="#tags">Tags do HTML</a></li>
+        <li><a href="#cabecalhos">Cabeçalhos do HTML</a></li>
+        <li><a href="#paragrafos">Paragrafos do HTML</a></li>
+        <li><a href="#imgs">Imagens no HTML</a></li>
+        <li><a href="#links">Links no HTML</a></li>
+        <li><a href="#listas">Listas no HTML</a></li>
+        <li><a href="#ref">Referências</a></li>
+    
+    </ul>
+    <br/>
+    <br/>
+    <hr/>
+    
+    <h2 id="estBasica"><font face="Verdana, Geneva, sans-serif">Estrutura básica de uma pagina HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <P>
+        A <strong>estrutura básica de uma página HTML </strong>pode ser vista na <strong>Listagem 1</strong>, na qual vemos as 
+        principais tags que são necessarias para que o documento seja corretamente interpretado pelos browsers.
+
+        <img src="./img/img01.PNG" alt="">
+        <P><strong>Listagem 1</strong>  - Estrutura básica de uma página HTML</P>
+        <br/>
+        <br/>
+        <P>
+            <strong>Linha 1:</strong> a instrução <strong>DOCTYPE</strong> deve ser sempre a primeira a aparecer em uma página HTML para 
+            indicar ao browser qual versão da linguagem usada. Nesse caso, estamos trabalhando com a HTML5,
+            versão na qual a declaração do DOCTYPE é bastante simples, como podemos ver na listagem;
+            <br/>
+            <br/>
+            <strong>Linha 2 e 10:</strong> abertura e fechamento da tag <strong>html</strong>, que delimita o documento. Sendo assim, 
+            todas as demais tags da página devem estar nesse espaço.
+            <br/>
+            <br/>
+            <strong>Linha 3 e 6:</strong> abertura e fechamento de tag <strong>head</strong>, que define o cabeçalho do documento. O 
+            conteúdo nesse espaço não é visível no browser, mas contém instruções sobre seu conteúdo e comportamento.
+            Dentro dessa tag, por exemplo, podem ser inseridas folhas de estilo e scripts.
+            <br/>
+            <br/>
+            <strong>Linha 4</strong> a tag <strong>meta</strong>, nesse caso, especifica qual conjunto de caracteres (character set ou charset) 
+            será usado para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais
+            utilizado em páginas web. A mesma tag <strong>meta</strong>, porém com outros atributos, pode ser utilizada para outros fins, como na
+            SEO (Search Engine Optimazation);
+            <br/>
+            <br/>
+            <strong>Linha 5</strong> a tag <strong>title</strong> define o título da página, aquele que aparece na janela/aba do navegador;
+            <br/>
+            <br/>
+            <strong>Linha 7 e 9</strong> abertura e fechamento da tag <strong>body</strong>, marcando o espaço no qual deve estar contido o 
+            conteúdo visual da página. As demais tags que representam texto, botões etc. devem ser adicionadas nesse intervaloç
+            <br/>
+            <br/>
+            <strong>Linha 8</strong> nessa linha podemos observar a sintaxe para adição de comentários em HTML. Esse trecho não é
+            renderizado pelo browser.
+            <br/>
+            <br/>
+            Para <strong>desenvolver páginas com HTML</strong> basicamente precisamos de um editor de texto, como o Bloco de Notas do Windows, 
+            Nano e Emacs no Linux, entre vários outros. Há, ainda, editores com opções avançadas, como recursos de syntax hilghligt e 
+            autocomplete, como Sublime Text, Atom, Brackets e Visual Studio Code, que podem ser usados para editar <strong>documentos HTML.</strong>
+            <br/>
+            Independentemente do editor utilizado, podemos simplesmente copiar o código da Listagem 1 para um deles e salvar o arquivo 
+            com extensão .html. Em seguida, podemos abrir esse arquivo em um browser.
+        </P>
+    </P>
+
+    <br/>
+    <br/>
+    <hr/>
+     
+    <h2 id="tags"><font face="Verdana, Geneva, sans-serif">Tags do HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Um documento HTML é composto por tags, as quais possuem um nome e aparecem entre os sinais <strong><</strong> e <strong>></strong>. <br/>
+        Como vimos na <strong>Listagem 1</strong>, por exemplo, em <strong>< html ></strong> e <strong>< head ></strong>. <br/>
+        Naquele exemplo também vimos que algumas tags precisam ser abertas e fechadas, como em <strong>< body ></strong> <strong> < /body ></strong>. <br/>
+        Nesse caso, a tag de fechamento deve conter a barra <strong>/</strong> antes do nome. Outras, porém, não precisam ser fechadas,
+        com tag <strong>< meta ></strong>. Nesse caso, a adição da barra <strong>/</strong> no final da propria tag, como vemos na  <strong>Linha 4</strong>
+        da <strong>Listagem 1</strong> é opcional.
+    </p>   
+
+    <br/>
+    <br/>
+    <hr/>
+    <h2 id="cabecalhos"><font face="Verdana, Geneva, sans-serif">Cabeçalhos do HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do restante 
+        do texto. No HTML há seis níveis de cabeçalhos/títuls que podem ser utilizados por meio das tags:
+        <strong>h1</strong>, <strong>h2</strong>, <strong>h3</strong>, <strong>h4</strong>, <strong>h5</strong>, <strong>h6</strong>,
+        sendo h1 o maior/mais relevante e h6 o menor/menos relevante.
+
+        <br/>
+        <p>
+            Na <strong>Listagem 2</strong> podemos ver como utilizar essas tags, e na <strong>Figura 1</strong> temos o resultado desse 
+            código. 
+            Para testar esse código, basta copiá-lo para o espaço indicado na <strong>Linha 8</strong> da <strong>Linha 1</strong> e 
+            salvar o documento com a extensão .html. 
+        </p>
+        <img src="./img/img02.PNG" alt="">
+        <P><strong>Listagem 2</strong>  - Estrutura básica de uma página HTML</P>
+
+        <br/>
+
+        <img src="./img/img03.PNG" alt="">
+        <P><strong>Figura 1</strong>  - Diferentes níveis de cabeçalho</P>
+
+    </p>
+    <br/>
+    <br/>
+    <hr/>
+    <h2 id="paragrafos"><font face="Verdana, Geneva, sans-serif">Paragrafos do HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Parágrafos de textos são gerados na HTML por meio des tags <strong>< p ></strong> <strong>< /p ></strong>. 
+        Esse é um exemplo de tag cuja disposição na tela se da em forma de bloco, ou seja, um parágrafo é posto sempre
+        abaixo do outro.
+
+        O código da <strong>Listagem 3</strong> adiciona três parágrafos, que podem ser visualizados na <strong>Figura 2</strong>
+
+        <img src="./img/img04.PNG" alt="">
+        <P><strong>Listagem 3</strong>  - Adicionando parágrafos</P>
+
+        <img src="./img/img05.PNG" alt="">
+        <P><strong>Figura 2</strong>  - Parágrafos visualizados na página</P>
+    </p>
+    <br/>
+    <br/>
+    <hr/>
+    <h2 id="imgs"><font face="Verdana, Geneva, sans-serif">Imagens no HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        A inserção de imagens em uma <strong>página HTML</strong> pode ser feita por meio da tag <mark>img</mark>, que recebe no 
+        atributo <mark>src</mark> o endereço do arquivo a ser carregado. Além desse, outros dois atributos importantes 
+        são o  <mark>alt</mark>, que indica um texto alternativo que será exibido caso o arquivo não possa ser carregado, e 
+        <mark>title</mark>, que indica o texto que aparecerá como tooltip ao passar o mouse sobre a figura.
+
+        <br/>
+        O código da <strong>Listagem 4</strong> insere uma imagem a partir do arquivo <mark>avatar.png</mark>, localizado na mesma 
+        pasta do arquivo HTML, e uma tag <mark>img</mark> apontando para um arquivo inexistente. Observe na <strong>Figura 3</strong>
+        que enquanto a primeira aparece corretamente, a segunda é exibida com um ícone de erro o texto alternativo que informamos. 
+        Note, ainda, que sobre a primeira figura está sendo exibido o tooltip definido no atributo <mark>title.</mark>
+
+        <br/>
+    
+        <img src="./img/img06.PNG" alt="">
+        <P><strong>Listagem 4</strong>  - Inserindo imagens</P>
+
+        <br/>
+        <img src="./img/img07.PNG" alt="">
+        <P><strong>Figura 3</strong>  - Exemplos de uso de tag img</P>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <p>
+            No caso da tag <mark>img</mark>, ainda temos as tags <mark>figure</mark> e <mark>figcaption</mark> que serão abordadas no 
+            tópico de <ins>HTML Semântico</ins>, porém, a sua estrutura é simples e é representada pelo código abaixo:
+        </p>
+        <img src="./img/img08.PNG" alt="">
+        <P><strong>Listagem 4.1</strong>  - Imagem com legenda</P>
+    </p>
+    <br/>
+    <br/>
+    <hr/>
+    <h2 id="links"><font face="Verdana, Geneva, sans-serif">Links no HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Links são normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. 
+        Nos dois casos, utilizamos a tag <mark>a</mark>, que possui o atributo <mark>href</mark> no qual indicamos o destino daquele link.
+
+        A <strong>Listagem 5</strong> mostra como adicionar um link para outra página, neste caso, indicada pelo arquivo pagina2.html.
+    </p>
+    <img src="./img/img09.PNG" alt="">
+        <P><strong>Listagem 5</strong>  - Inserindo link</P>    
+        <br/>
+        <br/>
+        
+        <p>
+            Já a <strong>Listagem 6</strong> mostra como adicionar um link para um elemento na mesma página. Nesse caso, 
+            ao clicar no link o browser mudará o foco para o elemento que possui o atributo <mark>id</mark> igual àquele indicado no <mark>href</mark>.
+        </p>
+        <img src="./img/img10.PNG" alt="">
+        <P><strong>Listagem 6</strong>  - Inserindo link com id</P> 
+        <br/>
+        <p>
+            Note também que nesse caso o <mark>href</mark> requer ainda o sinal de cerquilha (<mark>#</mark>) antes do <mark>id</mark> do elemento que será o foco do link.
+        </p>
+        <br/>
+    <br/>
+    <hr/>
+    <h2 id="listas"><font face="Verdana, Geneva, sans-serif">Listas no HTML</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <p>
+        Listas são elementos úteis para organizar e ordenar itens que estão relacionados de alguma forma. No HTML é possível
+        criar três tipos de listas: ordenadas (com a tag <mark>ol</mark>), não ordenadas (com a tag <mark>ul</mark>), e de definição (por meio da tag <mark>dl</mark>).
+    </p>
+    <br/>
+    <p>
+        Na <strong>Listagem 9</strong> temos um exemplo de lista ordenada, enquanto a <strong>Listagem 10</strong> traz um exemplo de lista não ordenada. Em seguida, a <strong>Figura 6</strong> mostra o resultado dos dois códigos. 
+        Observe que cada item das primeiras listas é definido pela tag <mark>li</mark>.
+    </p>
+    <img src="./img/img11.PNG" alt="">
+        <P><strong>Listagem 9</strong>  - Lista ordenada</P> 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <img src="./img/img12.PNG" alt="">
+        <P><strong>Figura 6</strong>  - Lista ordenada e não ordenada</P>
+        <p>
+            No caso das listas ordenadas temos o atributo <mark>type</mark> que permite especificar 
+            o tipo de marcador a ser usado: números (padrão), números romanos ou letras.
+        </p>
+        <img src="./img/img13.PNG" alt="">
+        <P><strong>Listagem 9.1</strong>  - Lista ordenada por número romano maiúsculo</P>
+        <p>
+            Os valores permitidos para esse atributo são:
+            <ol>
+                <li>1 - número (padrão)</li>
+                <li>i - números romanos minúsculos</li>
+                <li>I - números romanos maiúsculos</li>
+                <li>a - letras minúsculas</li>
+                <li>A - letras maiúsculas</li>
+            </ol>
+        </p>
+
+
+    <br/>
+    <br/>
+    <hr/>
+
+    <h2 id="ref"><font face="Verdana, Geneva, sans-serif">Referências</font></h2>
+    <small><a href="#inicio">(voltar)</a></small>    
+    <address>https://www.w3schools.com/html/default.asp</address>
+    <address>https://www.devmedia.com.br/html-basico-codigos-html/16596</address>
+    <address>https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos#:~:text=H%C3%A1%20dois%20tipos%20de%20atributos,%2C%20href%2C%20label%2C%20etc%E2%80%A6</address>
+</body>
+</html>
